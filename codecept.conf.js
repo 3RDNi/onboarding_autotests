@@ -11,8 +11,8 @@ exports.config = {
   output: './output',
   helpers: {
     Playwright: {
-      url: 'https://github.com',
-      show: false,
+      url: 'https://pwa.s3-website.tinkoff.ru/kasko-forms/storybook/iframe.html?id=kasko-uikitforms-desktop--default&viewMode=story',
+      show: true,
       windowSize: '1200x900',
       browser: 'chromium'
     },
@@ -23,7 +23,8 @@ exports.config = {
   bootstrap,
   include: {
     loginPage: './loginPage.ts',
-    homePage: './homePage.ts'
+    homePage: './homePage.ts',
+    KaskoForm: './pages/KaskoForm.ts'
   },
   name: 'typescript-boilerplate',
   plugins: {
